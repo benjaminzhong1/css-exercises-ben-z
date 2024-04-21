@@ -1,11 +1,14 @@
-body {
-  font-family: Arial, Helvetica, sans-serif;
+
+/*body class*/
+body{
+  font-family: 'Arial', 'Helvetica', 'sans-serif';
 }
 
+/*paragraph classes using a grouping selector format*/
 .para,
 .small-para {
   color: hsl(0, 0%, 0%);
-  font-weight: 800;
+  font-weight: 1000;
 }
 
 .small-para {
@@ -17,26 +20,28 @@ body {
   font-size: 22px;
 }
 
-.confirm {
-  background: green;
-  color: white;
-  font-weight: bold;
-} 
 
-.button {
+.button{
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   font-size: 20px;
 }
-
-.child {
-  color: rgb(0, 0, 0);
-  font-weight: 800;
-  font-size: 14px;
-}
+/*Two buttons using a chain combinator format*/
+.button#confirm{
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+} 
 
 div.text {
   color: rgb(0, 0, 0);
   font-size: 22px;
   font-weight: 100;
+  
+  .child {
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    font-size: 14px;
+  }
 }
